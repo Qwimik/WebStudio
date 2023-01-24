@@ -22,6 +22,10 @@
   --modal-input-border-color: rgba(33, 33, 33, 0.2);
   --modal-input-placeholder-color: rgba(117, 117, 117, 0.5);
   --modal-policy-color: #757575;
+
+  --mobile-breakpoint: 480px;
+  --tablet-breakpoint: 768px;
+  --desktop-breakpoint: 1200px;
 }
 
 /* ============= Generals ============= */
