@@ -175,9 +175,11 @@ img {
   margin-top: 284px;
 }
 .contacts-list {
-  column-gap: 40px;
   list-style: none;
   font-style: normal;
+  display: flex;
+  flex-direction: column-reverse;
+  row-gap: 40px;
 }
 .contacts-link {
   color: var(--slate-color);
@@ -185,6 +187,12 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   transition: color var(--time-transition) var(--timing-function);
+}
+.contacts-item:last-child .contacts-link {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 1.111;
+  color: var(--iris-color);
 }
 .contacts-link:hover,
 .contacts-link:focus {
