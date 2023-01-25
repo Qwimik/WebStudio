@@ -21,39 +21,46 @@
         <a class="logo" href="./index.html"
           ><span class="logo-accent">Web</span>Studio</a
         >
-        <div class="mobile-menu-container">
-          <div class="mobile-menu-content">
-            <nav class="page-nav">
-              <ul class="nav-list">
-                <li class="nav-item">
-                  <a class="nav-link active-link" href="./index.html">Studio</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./portfolio.html">Portfolio</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="">Contacts</a>
-                </li>
-              </ul>
-            </nav>
-            <address class="page-address">
-              <ul class="contacts-list">
-                <li class="contacts-item">
-                  <a class="contacts-link" href="mailto:info@devstudio.com"
-                    >info@devstudio.com</a
-                  >
-                </li>
-                <li class="contacts-item">
-                  <a class="contacts-link" href="tel:+110001111111"
-                    >+11 (000) 111-11-11</a
-                  >
-                </li>
-              </ul>
-            </address>
-          </div>
+        <div class="menu-container js-menu-container">
+          <button class="menu-toggle js-close-menu mobile-menu-close">
+            <svg class="close-modal-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-close-modal"></use>
+            </svg>
+          </button>
+          <nav class="page-nav">
+            <ul class="nav-list">
+              <li class="nav-item">
+                <a class="nav-link active-link" href="./index.html">Studio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./portfolio.html">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <address class="page-address">
+            <ul class="contacts-list">
+              <li class="contacts-item">
+                <a class="contacts-link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="contacts-item">
+                <a class="contacts-link" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>
+          </address>
         </div>
-        <button class="menu-toggle js-open-menu">
-          <svg class="mobile-menu-open-icon" width="32" height="22">
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="mobile-menu-open-icon">
             <use href="./images/icons.svg#icon-mobile-menu"></use>
           </svg>
         </button>
