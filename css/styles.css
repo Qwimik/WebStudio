@@ -113,7 +113,7 @@ img {
 
 /* ===== Contacts ===== */
 .menu-bottom {
-  margin-top: 200px;
+  margin-top: 230px;
 }
 .page-address {
   margin-bottom: 48px;
@@ -170,7 +170,6 @@ img {
 .social-icon {
   fill: currentColor;
 }
-
 /* ============= Mobile-menu ============= */
 @media screen and (max-width: 767px) {
   .page-header .container {
@@ -230,3 +229,7 @@ img {
     fill: var(--white-color);
   }
 }
+
+/* ============= Main ============= */
+
+/* ============= Hero ============= */
