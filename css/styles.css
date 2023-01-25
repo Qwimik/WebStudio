@@ -52,8 +52,7 @@ img {
   max-width: 100%;
 }
 .container {
-  max-width: 1158px;
-  padding: 0 15px;
+  padding: 0 16px;
   margin: 0 auto;
 }
 .page-section {
@@ -75,8 +74,12 @@ img {
   border-bottom: 1px solid var(--cornflower-color);
   padding: 24px 0;
 }
-
+.page-header .container {
+  display: flex;
+  align-items: center;
+}
 .menu-toggle {
+  margin-left: auto;
   cursor: pointer;
   display: flex;
   justify-content: center;
@@ -111,13 +114,14 @@ img {
   color: var(--white-color);
 }
 .menu-container {
+  overflow-y: scroll;
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
   background-color: #fff;
-  overflow: hidden;
+  padding: 80px 40px 40px;
   transform: translateX(100%);
   transition: transform var(--time-transition) var(--timing-function);
 }
@@ -126,16 +130,14 @@ img {
 }
 
 /* ===== Navigation ===== */
-.page-nav {
-  column-gap: 76px;
-}
+
 /* ===== Logo ===== */
 .logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 800;
   color: currentColor;
   font-size: 18px;
-  line-height: 1.33;
+  line-height: 1.166;
   letter-spacing: 0.03em;
   text-decoration: none;
   text-transform: uppercase;
@@ -144,36 +146,21 @@ img {
   color: var(--iris-color);
 }
 .nav-list {
-  column-gap: 40px;
-}
-.nav-item {
   list-style: none;
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
 }
+
 .nav-link {
   color: currentColor;
   text-decoration: none;
-  font-weight: 500;
-  line-height: 1.5;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.111;
   letter-spacing: 0.02em;
   position: relative;
   transition: color var(--time-transition) var(--timing-function);
-}
-.nav-link::after {
-  content: '';
-  display: block;
-  width: 100%;
-  height: 4px;
-  border-radius: 2px;
-  background-color: var(--ocean-color);
-  position: absolute;
-  left: 0;
-  bottom: -27px;
-  transform: scaleX(0);
-  transition: transform var(--time-transition) var(--timing-function);
-}
-.nav-link:hover::after,
-.nav-link:focus::after {
-  transform: scaleX(1);
 }
 .nav-link:hover,
 .nav-link:focus {
@@ -182,14 +169,10 @@ img {
 .active-link {
   color: var(--ocean-color);
 }
-.active-link::after {
-  transform: scaleX(1);
-  content: '';
-}
 
 /* ===== Contacts ===== */
 .page-address {
-  margin-left: auto;
+  margin-top: 284px;
 }
 .contacts-list {
   column-gap: 40px;
@@ -208,6 +191,15 @@ img {
   color: var(--ocean-color);
 }
 
+.social-list {
+  margin-top: 48px;
+  display: flex;
+}
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 /* ============= index.html ============= */
 /* ============= Main ============= */
 
