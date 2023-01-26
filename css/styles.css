@@ -953,4 +953,29 @@ img {
         url('../images/tablet-hero-bg@2x.jpg');
     }
   }
+  .hero .container {
+    min-height: 436px;
+    gap: 40px;
+  }
+  .hero-title {
+    font-size: 56px;
+    line-height: 1.07;
+    max-width: 496px;
+  }
+  .features-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    column-gap: 24px;
+  }
+  .features-item {
+    flex-basis: calc(50% - 12px);
+  }
+  .features-item-title {
+    text-align: left;
+  }
+  .features-item-text {
+    font-weight: 500;
+  }
 }
