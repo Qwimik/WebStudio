@@ -18,36 +18,84 @@
   <body>
     <header class="page-header">
       <div class="container">
-        <nav class="page-nav">
-          <a class="logo" href="./index.html"
-            ><span class="logo-accent">Web</span>Studio</a
-          >
-          <ul class="nav-list">
-            <li class="nav-item">
-              <a class="nav-link" href="./index.html">Studio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active-link" href="./portfolio.html"
-                >Portfolio</a
-              >
-            </li>
-            <li class="nav-item"><a class="nav-link" href="">Contacts</a></li>
-          </ul>
-        </nav>
-        <address class="page-address">
-          <ul class="contacts-list">
-            <li class="contacts-item">
-              <a class="contacts-link" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li class="contacts-item">
-              <a class="contacts-link" href="tel:+110001111111"
-                >+11 (000) 111-11-11</a
-              >
-            </li>
-          </ul>
-        </address>
+        <a class="logo" href="./index.html"
+          ><span class="logo-accent">Web</span>Studio</a
+        >
+        <div class="menu-container js-menu-container">
+          <button class="menu-toggle js-close-menu mobile-menu-close">
+            <svg class="close-modal-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-close-modal"></use>
+            </svg>
+          </button>
+          <nav class="page-nav">
+            <ul class="nav-list">
+              <li class="nav-item">
+                <a class="nav-link active-link" href="./index.html">Studio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./portfolio.html">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="menu-bottom">
+            <address class="page-address">
+              <ul class="contacts-list">
+                <li class="contacts-item">
+                  <a class="contacts-link" href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="contacts-item">
+                  <a class="contacts-link" href="tel:+110001111111"
+                    >+11 (000) 111-11-11</a
+                  >
+                </li>
+              </ul>
+            </address>
+            <ul class="social-list">
+              <li class="social-item">
+                <a href="" class="social-link">
+                  <svg class="social-icon" width="16" height="16">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-item">
+                <a href="" class="social-link">
+                  <svg class="social-icon" width="16" height="16">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-item">
+                <a href="" class="social-link">
+                  <svg class="social-icon" width="16" height="16">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-item">
+                <a href="" class="social-link">
+                  <svg class="social-icon" width="16" height="16">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="mobile-menu-open-icon">
+            <use href="./images/icons.svg#icon-mobile-menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main class="page-main">
@@ -349,16 +397,16 @@
         </div>
         <div class="footer-form-container">
           <form class="footer-form">
-            <label>
-              <span class="footer-label">Subscribe</span>
-              <input
-                type="email"
-                name="email"
-                id="email"
-                class="footer-input"
-                placeholder="E-mail"
-              />
-            </label>
+            <label class="fieldset" for="email">
+              <span class="footer-label">Subscribe</span></label
+            >
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="footer-input"
+              placeholder="E-mail"
+            />
             <button type="submit" class="footer-form-btn">
               <span class="btn-text">Subscribe</span>
               <svg class="subscribe-icon" width="24" height="24">
