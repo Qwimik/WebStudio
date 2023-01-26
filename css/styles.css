@@ -289,6 +289,7 @@ img {
   letter-spacing: 0.04em;
   border: none;
   outline: none;
+  cursor: pointer;
   background-color: var(--iris-color);
   padding: 16px 32px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -699,6 +700,7 @@ img {
     opacity var(--time-transition) var(--timing-function);
 }
 .close-modal-btn {
+  cursor: pointer;
   position: absolute;
   top: 24px;
   right: 24px;
@@ -850,6 +852,7 @@ img {
   border-color: var(--iris-color);
 }
 .modal-btn {
+  cursor: pointer;
   margin: 16px auto 0;
   padding: 16px 32px;
   min-width: 169px;
@@ -1117,6 +1120,10 @@ img {
   .contacts-list {
     flex-direction: row;
     column-gap: 40px;
+  }
+  .contacts-link,
+  .contacts-item:last-child .contacts-link {
+    font-size: 16px;
   }
 
   /* ============= Main ============= */
