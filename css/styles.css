@@ -219,8 +219,11 @@ img {
   display: flex;
   justify-content: space-between;
   list-style: none;
+}
+.menu-bottom .social-list {
   padding-right: 60px;
 }
+
 .social-link {
   display: flex;
   justify-content: center;
