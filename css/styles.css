@@ -1196,6 +1196,14 @@ img {
     column-gap: 24px;
   }
 
+  .team-cards {
+    column-gap: 24px;
+  }
+
+  .team-card .social-list {
+    padding-right: 0;
+  }
+
   .customer-link {
     padding: 16px 31px;
   }
