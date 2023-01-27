@@ -150,6 +150,9 @@ img {
     background-color: var(--ocean-color);
     color: var(--white-color);
   }
+  .team-card .social-list {
+    padding-right: 0;
+  }
 }
 
 /* ===== Navigation ===== */
