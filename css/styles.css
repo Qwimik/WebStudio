@@ -1021,6 +1021,9 @@ img {
     column-gap: 24px;
     row-gap: 64px;
   }
+  .team-card .social-list {
+    padding-right: 0;
+  }
 
   /* ===== Customers ===== */
   .customers-list {
