@@ -711,6 +711,7 @@ img {
 .close-modal-btn {
   cursor: pointer;
   position: absolute;
+  padding: 0;
   top: 24px;
   right: 24px;
   width: 24px;
