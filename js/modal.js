@@ -7,6 +7,11 @@
 
   refs.openModalBtn.addEventListener('click', toggleModal);
   refs.closeModalBtn.addEventListener('click', toggleModal);
+  refs.modal.addEventListener('click', e => {
+    if (e.currentTarget === e.target) {
+      toggleModal();
+    }
+  });
 
   function toggleModal() {
     document.body.classList.toggle('modal-open');
